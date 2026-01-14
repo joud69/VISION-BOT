@@ -5,7 +5,8 @@ Suite de mon projet de fin d’études : **Pilotage**, **Vision IA**, **Commande
 ## VISION_BOT — Pilotage, Vision IA & Interface Web
 ![photo_2025-12-26_19-51-36](https://github.com/user-attachments/assets/7744e864-a95e-4ae1-9808-551f49364f74)
 
-<iframe src="https://embed.screenapp.io/app/v/R0eZvttlgU?embed=true" width="100%" height="960" frameborder="0" allowfullscreen></iframe>
+
+![0114](https://github.com/user-attachments/assets/a05bc8a9-c19d-4478-a2a2-8884d9efcd59)
 
 ### Architecture générale
 
