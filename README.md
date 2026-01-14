@@ -7,12 +7,10 @@ Suite de mon projet de fin d’études : **Pilotage**, **Vision IA**, **Commande
 
 
 
-<p align="center">
-  <video width="800" controls>
-    <source src="https://github.com/user-attachments/assets/f5769db6-c30c-4c5b-9d01-aadba5efdf64" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
+
+
+
+https://github.com/user-attachments/assets/f1d9b3e5-fb03-4fcd-a5e9-efd10bf5d7b1
 
 
 
