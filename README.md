@@ -1,8 +1,8 @@
 #  VISION-BOT
 
-Suite de mon projet de fin d’études : **Pilotage**, **Vision IA**, **Commandes vocales** & **Interface Homme-Machine (IHM)**.
+Suite de mon projet de fin d’études : **Navigation**, **Vision IA**, **Commandes vocales** & **Interface Homme-Machine (IHM)**.
 
-## VISION_BOT — Pilotage, Vision IA & Interface Web
+
 ![photo_2025-12-26_19-51-36](https://github.com/user-attachments/assets/7744e864-a95e-4ae1-9808-551f49364f74)
 
 
