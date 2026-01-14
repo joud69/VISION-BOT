@@ -6,10 +6,10 @@ Suite de mon projet de fin d’études : **Pilotage**, **Vision IA**, **Commande
 ![photo_2025-12-26_19-51-36](https://github.com/user-attachments/assets/7744e864-a95e-4ae1-9808-551f49364f74)
 
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/7744e864-a95e-4ae1-9808-551f49364f74"
-       style="max-width: 100%; width: 1000px;" />
-</p>
+
+
+https://github.com/user-attachments/assets/cc61815c-d04e-4320-b306-f57783f25a9d
+
 
 ### Architecture générale
 
