@@ -19,7 +19,7 @@ Capteurs ──► Bluetooth ◄── Pilotage / Décision
 
 
 
-RCXD_BOT/
+VISION_BOT/
 ├── README.md
 │   └── Documentation générale du projet
 │
