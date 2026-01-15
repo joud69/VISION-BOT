@@ -1,6 +1,6 @@
 #  VISION-BOT
 
-Suite de mon projet de fin d’études : **Navigation**, **Vision IA**, **Commandes vocales** & **Interface Homme-Machine (IHM)**.
+Continuation of my final-year project: Navigation, AI Vision, Voice Commands, and Human–Machine Interface (HMI).
 
 
 ![photo_2025-12-26_19-51-36](https://github.com/user-attachments/assets/7744e864-a95e-4ae1-9808-551f49364f74)
@@ -17,107 +17,107 @@ https://github.com/user-attachments/assets/f1d9b3e5-fb03-4fcd-a5e9-efd10bf5d7b1
 
 
 
-### Architecture générale
+### General Architecture
 
 ```text
-ESP32-CAM ──► Flux vidéo ──► Vision IA (YOLO)
-     │                             │
-     │                             ▼
-Capteurs ──► Bluetooth ◄── Pilotage / Décision
-     │                             │
-     ▼                             ▼
-   Robot                    Interface Web (Flask)
+ESP32-CAM ──► Video stream ──► AI Vision (YOLO)
+     │                              │
+     │                              ▼
+Sensors ──► Bluetooth ◄── Control / Decision
+     │                              │
+     ▼                              ▼
+   Robot                     Web Interface (Flask)
 
 
 
 VISION_BOT/
 ├── README.md
-│   └── Documentation générale du projet
+│   └── General project documentation
 │
 ├── ESP32_CAM_config/
 │   └── ESP32_CAM_config.ino
-│       └── Configuration et gestion du flux vidéo de l’ESP32-CAM
+│       └── Configuration and management of the ESP32-CAM video stream
 │
 ├── RC_UP/
 │   └── RC_UP.ino
-│       └── Firmware Arduino : commandes de déplacement avant / rotation
+│       └── Arduino firmware: Navigation
 │
 ├── RC_DOWN/
 │   └── RC_DOWN.ino
-│       └── Firmware Arduino : commandes de déplacement arrière / arrêt
+│       └── Arduino firmware: Tracking
 │
 ├── PILOT/
 │   ├── main.py
-│   │   └── Point d’entrée du système :
-│   │       - Initialisation Bluetooth
-│   │       - Lancement du serveur Flask
-│   │       - Activation du streaming ESP32
-│   │       - Démarrage des threads (pilotage, vision, vocal)
+│   │   └── System entry point:
+│   │       - Bluetooth initialization
+│   │       - Flask server startup
+│   │       - ESP32 video streaming activation
+│   │       - Thread startup (control, vision, voice)
 │   │
 │   ├── config.py
-│   │   └── Configuration globale :
-│   │       - Ports et périphériques
-│   │       - URL caméra ESP32
-│   │       - Paramètres IA (YOLO, seuils)
+│   │   └── Global configuration:
+│   │       - Ports and devices
+│   │       - ESP32 camera URL
+│   │       - AI parameters (YOLO, thresholds)
 │   │
 │   ├── globals.py
-│   │   └── Variables globales partagées :
-│   │       - États du robot
-│   │       - Données capteurs
-│   │       - Logs système
-│   │       - Connexion Bluetooth active
+│   │   └── Shared global variables:
+│   │       - Robot states
+│   │       - Sensor data
+│   │       - System logs
+│   │       - Active Bluetooth connection
 │   │
 │   ├── bluetooth.py
-│   │   └── Communication Bluetooth :
-│   │       - Connexion série PC ↔ robot
-│   │       - Envoi des commandes
-│   │       - Réception des données capteurs
-│   │       - Gestion des reconnexions
+│   │   └── Bluetooth communication:
+│   │       - PC ↔ robot serial connection
+│   │       - Command transmission
+│   │       - Sensor data reception
+│   │       - Reconnection handling
 │   │
 │   ├── pilot.py
-│   │   └── Pilotage et échanges de données :
-│   │       - Entrées clavier / IHM
-│   │       - Transmission des commandes robot
-│   │       - Réception et parsing des données embarquées
+│   │   └── Control and data exchange:
+│   │       - Keyboard / HMI inputs
+│   │       - Robot command transmission
+│   │       - Embedded data reception and parsing
 │   │
 │   ├── voice.py
-│   │   └── Commandes vocales :
-│   │       - Reconnaissance vocale
-│   │       - Analyse sémantique
-│   │       - Correction et reformulation par IA
-│   │       - Génération de commandes robot
+│   │   └── Voice commands:
+│   │       - Speech recognition
+│   │       - Semantic analysis
+│   │       - AI-based correction and reformulation
+│   │       - Robot command generation
 │   │
 │   ├── vision.py
-│   │   └── Vision artificielle :
-│   │       - Réception du flux vidéo ESP32
-│   │       - Détection et tracking (YOLOv8)
-│   │       - Suivi automatique pan/tilt
-│   │       - Analyse IA d’image
+│   │   └── Computer vision:
+│   │       - ESP32 video stream reception
+│   │       - Detection and tracking (YOLOv8)
+│   │       - Automatic pan/tilt tracking
+│   │       - AI-based image analysis
 │   │
 │   └── server.py
-│       └── Serveur Flask :
-│           - API REST
-│           - Streaming vidéo MJPEG
-│           - Envoi des données capteurs
-│           - Logs temps réel
-│           - Gestion des modes de pilotage
+│       └── Flask server:
+│           - REST API
+│           - MJPEG video streaming
+│           - Sensor data transmission
+│           - Real-time logs
+│           - Control mode management
 │
 └── IHM/
     ├── package.json
-    │   └── Dépendances et scripts du frontend
+    │   └── Frontend dependencies and scripts
     │
     ├── vite.config.ts
-    │   └── Configuration Vite
+    │   └── Vite configuration
     │
     ├── tsconfig.json
-    │   └── Configuration TypeScript
+    │   └── TypeScript configuration
     │
     └── src/
         ├── main.tsx
-        │   └── Point d’entrée de l’application web
+        │   └── Web application entry point
         │
         ├── App.tsx
-        │   └── Composant racine de l’IHM
+        │   └── Root HMI component
         │
         ├── components/
         │   ├── AccelerationGauges.tsx
@@ -131,12 +131,7 @@ VISION_BOT/
         │   └── SystemLog.tsx
         │
         ├── ui/
-        │   └── Composants UI génériques et styles réutilisables
+        │   └── Reusable UI components and styles
         │
         └── figma/
-            └── Maquettes, assets graphiques et design de l’IHM
-
-
-
-
-            
+            └── HMI mockups, graphical assets, and UI design
